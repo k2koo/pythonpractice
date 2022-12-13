@@ -1,0 +1,35 @@
+#https://school.programmers.co.kr/learn/courses/30/lessons/120849
+
+def solution(my_string):
+    answer = 0
+    a = my_string.replace("a", "")
+    b = a.replace("e", "")
+    c = b.replace("i", "")
+    d = c.replace("o", "")
+    e = d.replace("u", "")
+    answer = e
+    
+    return answer
+  
+def solution(my_string):
+    return "".join([i for i in my_string if not(i in "aeiou")])
+    
+    def solution(my_string):
+    vowels = ['a','e','i','o','u']
+    for vowel in vowels:
+        my_string = my_string.replace(vowel, '')
+    return my_string
+    
+import re
+
+def solution(my_string):
+    return re.sub(r"a|e|i|o|u", "", my_string)
+    
+    def solution(my_string):
+    A = ['a','e','i','o','u']
+    answer = ''
+    for i in my_string:
+        if i not in A:
+            answer += i
+
+    return answer
