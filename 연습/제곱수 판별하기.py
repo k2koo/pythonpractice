@@ -16,3 +16,7 @@ def solution(n):
         return 2
       
 제곱에 대한 표현
+from math import sqrt
+
+def solution(n: int) -> int:
+    return 1 if sqrt(n) == int(sqrt(n)) else 2
