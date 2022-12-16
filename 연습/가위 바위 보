@@ -1,0 +1,9 @@
+#https://school.programmers.co.kr/learn/courses/30/lessons/120839
+def solution(rsp):
+    dict = {"2": "0", "0": "5", "5": "2"}
+
+    return "".join(map(str, [dict[x] for x in rsp]))
+    
+    def solution(rsp):
+    d = {'0':'5','2':'0','5':'2'}
+    return ''.join(d[i] for i in rsp)
