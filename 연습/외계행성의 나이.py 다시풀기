@@ -1,0 +1,17 @@
+#https://school.programmers.co.kr/learn/courses/30/lessons/120834
+
+def solution(age):
+    answer = '' 
+    dict = {index: chr(x) for index, x in enumerate(range(97, 97+10))}
+
+    return ''.join(map(str, [dict[int(x)] for x in list(str(age))]))
+  
+  def solution(age):
+    conv = {'0':'a','1':'b','2':'c','3':'d','4':'e'
+            ,'5':'f','6':'g','7':'h','8':'i','9':'j'}
+    return ''.join(conv[i] for i in str(age))
+  
+  def solution(age):
+    answer = ''
+    char_num = {str(i): chr(ord('a') + i) for i in range(26)}
+    return ''.join([char_num[x] for x in str(age)])
