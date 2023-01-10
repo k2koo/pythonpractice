@@ -36,3 +36,10 @@ def solution(chicken: int) -> int:
         answer += chicken
         chicken += mod
     return answer
+
+def solution(chicken: int) -> int:
+    coupon = 0
+    while chicken > 9:
+        coupon += chicken //10
+        chicken = chicken //10 + chicken % 10
+    return coupon
